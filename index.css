@@ -292,12 +292,32 @@
   }
 }
 
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
 .pastWorksContainer {
-  display: flex;
-  overflow-x: scroll;
-  gap: 8px;
-  scroll-behavior: smooth;
   margin-bottom: 60px;
+
+  .scroller__inner {
+    display: flex;
+    gap: 16px;
+    width: fit-content;
+    flex-wrap: nowrap;
+    animation: scroll 20s forwards linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-inline: 0;
+  }
+
   img {
     height: 400px;
     width: 400px;
