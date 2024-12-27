@@ -35,6 +35,7 @@
       color: #fff;
       text-transform: uppercase;
       font-size: 14px;
+      padding: 0;
 
       a {
         color: inherit;
@@ -296,10 +297,56 @@
   overflow-x: scroll;
   gap: 8px;
   scroll-behavior: smooth;
+  margin-bottom: 60px;
   img {
     height: 400px;
     width: 400px;
     border-radius: 5px;
+  }
+}
+
+.reviewsContainer {
+  margin-bottom: 100px;
+  overflow-x: scroll;
+  padding: 32px 0;
+  display: flex;
+  gap: 20px;
+  .reviewCard {
+    padding: 20px;
+    min-width: 250px;
+    box-shadow: 0 0 7px 1px #ddd;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.5s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .ratingConatiner {
+      margin-bottom: 8px;
+      .ratingIcon {
+        font-size: 14px;
+        color: #ff6400;
+      }
+    }
+    .reviewContent {
+      font-size: 12px;
+      line-height: 2;
+      margin: 0;
+      color: #666;
+    }
+    .quoteIcon {
+      font-size: 35px;
+      color: #666;
+      position: absolute;
+      top: -20px;
+      left: 0px;
+    }
   }
 }
 
