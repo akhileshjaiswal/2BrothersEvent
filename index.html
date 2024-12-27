@@ -509,7 +509,7 @@
     const header = document.getElementsByClassName("header")[0];
     window.addEventListener("scroll", () => {
       if (window.innerWidth < 600) {
-        if (window.scrollY > 150) {
+        if (window.scrollY > 0) {
           header.style.backgroundColor = "rgba(0, 0, 0, 0.8)"; // Dark background
         } else {
           header.style.backgroundColor = "transparent"; // Transparent background

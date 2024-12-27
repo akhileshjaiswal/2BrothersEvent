@@ -3,6 +3,9 @@
 }
 
 .header {
+  @media only screen and (max-width: 600px) {
+    height: 150px !important;
+  }
   height: 100px;
   position: fixed;
   width: 100%;
