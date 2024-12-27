@@ -406,8 +406,8 @@
       padding: 0 15%;
       justify-content: space-evenly;
       flex-wrap: wrap;
+      margin-bottom: 32px;
       .footerCard {
-        height: 300px;
         width: 250px;
 
         .title {

@@ -201,7 +201,10 @@
   }
 }
 
-.content {
+.mainContent {
+  @media only screen and (max-width: 600px) {
+    padding: 0 5% !important;
+  }
   font-size: 14px;
   line-height: 3;
   text-align: center;
@@ -265,8 +268,8 @@
       padding: 0 15%;
       justify-content: space-evenly;
       flex-wrap: wrap;
+      margin-bottom: 32px;
       .footerCard {
-        height: 300px;
         width: 250px;
 
         .title {
